@@ -11,7 +11,7 @@ body{
     grid-row:1/3;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 20px;
     gap:50px;
 }
 .dashboard_top{
@@ -26,12 +26,6 @@ body{
 .dashboard_top h1{
     color: white;
     margin: 0;
-}
-header{
-    background-color: white;
-}
-main{
-    background-color: #dce0e9;
 }
 .dashboard_middle, .dashboard_bottom{
     display: flex;
@@ -57,16 +51,17 @@ main{
 header{
     display:grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 30px 60px;
+    grid-template-rows: 1fr 2fr;
+    padding: 20px 60px;
+    row-gap: 30px;
 }
 .header_search{
     display:flex;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
 }
 .header_search input{
-    width: 80%;
+    width: 90%;
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
@@ -83,10 +78,9 @@ header{
 }
 .header_user_info_top{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: right;
     gap: 30px;
-    padding-right: 50px;
 }
 .header_user_info_top img+img{
     height: 3rem;
@@ -97,4 +91,43 @@ header{
     font-size: 1.3rem;
     margin: 0;
     font-weight: bolder;
+}
+.header_user_info_bottom{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header_user_info_bottom img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+}
+.header_user_info_bottom p{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin: 0;
+}
+.title {
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+.header_buttons{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header_buttons button{
+    background-color: #38a3e0;
+    color: white;
+    border:none;
+    flex:1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    height: 3rem;
+}
+
+main{
+    background-color: #dce0e9;
 }
